@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: vprodb
-          image: dshahi/vprofiledb
+          image: dshahi/vprofiledb:latest
           args:
             - "--ignore-db-dir=lost+found"
           volumeMounts:
