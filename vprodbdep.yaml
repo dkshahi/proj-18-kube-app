@@ -16,7 +16,8 @@ spec:
     spec:
       containers:
         - name: vprodb
-          image: dshahi/vprofiledb:latest
+          image: docker.io/vprofile/vprofiledb:V1
+          imagePullPolicy: Always
           args:
             - "--ignore-db-dir=lost+found"
           volumeMounts:
